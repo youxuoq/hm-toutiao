@@ -4,7 +4,7 @@
     <el-aside :width="isCollapse == false ? '200px' : '64px'" class="aside">
         <div :class="{'logo': !isCollapse, 'cutLogo': isCollapse}"></div>
       <el-menu
-        default-active="/"
+        :default-active="$route.path"
         class="el-menu-vertical-demo"
         background-color="#001E32"
         text-color="#fff"
