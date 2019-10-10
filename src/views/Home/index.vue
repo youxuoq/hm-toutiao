@@ -89,13 +89,11 @@ export default {
     const user = JSON.parse(window.sessionStorage.getItem('TOKEN'))
     this.userData.name = user.name
     this.userData.photo = user.photo
-    console.log(user)
   },
   methods: {
     // 切换侧边栏
     cutAside () {
       this.isCollapse = !this.isCollapse
-      console.log(this.isCollapse)
     },
     // 前往个人设置
     setting () {

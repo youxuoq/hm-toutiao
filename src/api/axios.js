@@ -1,7 +1,16 @@
 // 封装axios
 import axios from 'axios'
+import JSONBigint from 'json-bigint'
 const instance = axios.create({
-  baseURL: 'http://ttapi.research.itcast.cn/mp/v1_0/'
+  baseURL: 'http://ttapi.research.itcast.cn/mp/v1_0/',
+  // `transformResponse` 在传递给 then/catch 前，允许修改响应数据
+  transformResponse: [function (data) {
+    // 对 data 进行任意转换处理
+    if (data) {
+      return JSONBigint.parse(data)
+    }
+    return data
+  }]
 })
 
 // 添加请求拦截器
