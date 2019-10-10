@@ -1,0 +1,16 @@
+<template>
+    <!-- 内容管理 -->
+    <div class="container-article">
+        内容管理
+    </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style lang="less" scoped>
+
+</style>
