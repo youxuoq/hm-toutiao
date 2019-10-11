@@ -22,7 +22,6 @@ export default {
   },
   created () {
     this.getChannel()
-    console.log(this.value)
   },
   methods: {
     // 获取频道数据
