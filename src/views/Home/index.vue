@@ -117,12 +117,14 @@ export default {
       display: flex;
       flex-direction: column;
       .logo {
+          z-index: 999;
           height: 60px;
           width: 200px;
           position: fixed;
           background: #00263E url(../../assets/images/logo_admin.png) no-repeat center / 140px auto
       }
       .cutLogo {
+          z-index: 999;
           box-sizing: border-box;
           height: 60px;
           width: 64px;

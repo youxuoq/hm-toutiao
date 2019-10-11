@@ -1,0 +1,17 @@
+.avatar-uploader {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border: 1px dashed #ccc;
+}
+.avatar-uploader .avatar-uploader-icon {
+  font-size: 30px;
+  line-height: 200px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+.avatar-uploader img {
+  width: 200px;
+  height: 200px;
+}
