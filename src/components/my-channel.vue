@@ -33,7 +33,6 @@ export default {
     },
     changeVal (val) {
       this.$emit('input', val)
-      console.log(val)
     }
   }
 

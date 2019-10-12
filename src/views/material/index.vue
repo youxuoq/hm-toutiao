@@ -18,6 +18,9 @@
             <span class="el-icon-star-off" :class="{spanhover: item.is_collected}" @click="toCollect(item)"></span>
             <span
               class="el-icon-delete"
+              :class="{spanhover: item.id === selectSpan}"
+              @mouseenter="enterSpan(item.id)"
+              @mouseleave="leaveSpan"
               @click="toDelete(item.id)"
             ></span>
           </div>
@@ -75,8 +78,8 @@ export default {
       },
       // 加载状态
       isLoading: false,
-      // red样式的显示
-      isRed: false
+      // span的样式的显示
+      selectSpan: null
 
     }
   },
@@ -144,6 +147,13 @@ export default {
     switchPage (page) {
       this.reqData.page = page
       this.getMaterial()
+    },
+    // 删除图片的样式
+    enterSpan (id) {
+      this.selectSpan = id
+    },
+    leaveSpan () {
+      this.selectSpan = null
     }
   }
 }
