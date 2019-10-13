@@ -159,7 +159,7 @@ export default {
     },
     // 修改文章
     editAticle (articleId) {
-      this.$router.push({ path: '/publish', query: { articleId } })
+      this.$router.push({ path: '/publish?articleId=' + articleId })
     }
   }
 }
