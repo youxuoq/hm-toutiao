@@ -12,7 +12,7 @@
         <el-form-item label="内容: ">
           <quill-editor v-model="reqData.content" :options="editorOption" style="width: 800px"></quill-editor>
         </el-form-item>
-        <el-form-item label="封面: ">
+        <el-form-item label="封面: " style="margin-bottom: 12px">
             <el-radio-group v-model="reqData.cover.type" @change="typeChange">
               <el-radio :label="1">单图</el-radio>
               <el-radio :label="3">三图</el-radio>
