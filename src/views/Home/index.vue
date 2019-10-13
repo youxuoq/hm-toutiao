@@ -75,6 +75,7 @@
 </template>
 
 <script>
+import eventBus from '@/eventBus/index'
 export default {
   data () {
     return {
@@ -89,6 +90,12 @@ export default {
     const user = JSON.parse(window.sessionStorage.getItem('TOKEN'))
     this.userData.name = user.name
     this.userData.photo = user.photo
+    eventBus.$on('getName', (name) => {
+      this.userData.name = name
+    })
+    eventBus.$on('getPhoto', (photo) => {
+      this.userData.photo = photo
+    })
   },
   methods: {
     // 切换侧边栏

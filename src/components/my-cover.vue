@@ -194,7 +194,7 @@ export default {
     display: inline-block;
     width: 150px;
     height: 150px;
-    margin-left: 20px;
+    margin-right: 20px;
   .cover-image {
     display: inline-block;
     width: 150px;

@@ -62,7 +62,6 @@ export default {
     },
     // 修改文章的状态
     async changeStatus (row) {
-      console.log(row)
       if (row.comment_status) {
         this.$confirm('是否要关闭评论', '提示', {
           confirmButtonText: '确定',
@@ -71,7 +70,6 @@ export default {
         }).then(async () => {
           const { data } = await this.axios.put(`comments/status?article_id=${row.id}`, { allow_comment: !row.comment_status })
           row.comment_status = data.data.allow_comment
-          console.log(data)
           this.$message({
             type: 'success',
             message: '评论已关闭!'
@@ -80,7 +78,6 @@ export default {
       } else {
         const { data } = await this.axios.put(`comments/status?article_id=${row.id}`, { allow_comment: !row.comment_status })
         row.comment_status = data.data.allow_comment
-        console.log(data)
         this.$message({
           type: 'success',
           message: '评论已打开!'

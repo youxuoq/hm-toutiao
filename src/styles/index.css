@@ -7,34 +7,41 @@
 .container-material .el-dialog__wrapper {
   overflow: hidden;
 }
+.container-material .el-dialog__wrapper .el-dialog {
+  width: 320px;
+}
 .container-material .el-dialog__body {
   padding-bottom: 40px;
 }
-.container-material .avatar-uploader {
+.container-material .el-upload {
+  width: 100%;
+  height: 100%;
+}
+.container-material .el-upload img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  text-align: center;
+  vertical-align: middle;
+}
+.avatar-uploader {
   width: 250px;
   height: 250px;
   margin: 0 auto;
   border: 1px dashed #ccc;
   overflow: hidden;
 }
-.container-material .avatar-uploader .avatar-uploader-icon {
+.avatar-uploader .avatar {
+  width: 250px;
+  height: 250px;
+}
+.avatar-uploader .avatar-uploader-icon {
   font-size: 60px;
   line-height: 250px;
   width: 250px;
   height: 250px;
   text-align: center;
   color: #eee;
-}
-.container-material .avatar-uploader .el-upload {
-  width: 100%;
-  height: 100%;
-}
-.container-material .avatar-uploader .el-upload img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  text-align: center;
-  vertical-align: middle;
 }
 .container-cover .el-dialog__footer {
   text-align: center;

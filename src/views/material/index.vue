@@ -37,7 +37,7 @@
       </div>
 
       <!-- 弹框 -->
-      <el-dialog title="上传素材" width="18%" :visible.sync="isBounced" >
+      <el-dialog title="上传素材" :visible.sync="isBounced" >
           <el-upload
             class="avatar-uploader"
             :show-file-list="false"

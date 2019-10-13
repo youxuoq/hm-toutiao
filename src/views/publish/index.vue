@@ -101,7 +101,7 @@ export default {
       this.articleId = null
       this.reqData.title = null
       this.reqData.content = null
-      this.reqData.cover.type = null
+      this.reqData.cover.type = 1
       this.reqData.cover.images = []
       this.reqData.channel_id = null
     }
