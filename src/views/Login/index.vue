@@ -58,7 +58,7 @@ export default {
     }
     return {
       loginForm: {
-        mobile: '13911111111',
+        mobile: '17770522165',
         code: '246810'
       },
       checked: true,
