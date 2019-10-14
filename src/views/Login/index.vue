@@ -22,7 +22,7 @@
               placeholder="请输入验证码"
               style="width: 245px; hieght: 47px"
             ></el-input>
-            <el-button style="height: 47px; width: 143px; float: right">获取验证码</el-button>
+            <el-button style="height: 42px; width: 143px; float: right">获取验证码</el-button>
           </el-form-item>
           <el-form-item>
             <el-checkbox-group v-model="checked">

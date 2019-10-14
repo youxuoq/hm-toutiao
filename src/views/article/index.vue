@@ -5,7 +5,7 @@
     <el-card>
       <!-- 头部 面包屑导航 -->
       <div slot="header" class="clearfix">
-        <my-bread>内容管理</my-bread>
+        <my-bread>文章管理</my-bread>
       </div>
       <!-- 筛选表单 -->
       <el-form v-model="formData" label-width="50px" size="small">

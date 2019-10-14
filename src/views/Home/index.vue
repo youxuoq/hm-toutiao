@@ -20,7 +20,7 @@
         </el-menu-item>
         <el-menu-item index="/article">
           <i class="el-icon-document"></i>
-          <span slot="title">内容管理</span>
+          <span slot="title">文章管理</span>
         </el-menu-item>
         <el-menu-item index="/material">
           <i class="el-icon-picture"></i>

@@ -28,7 +28,7 @@
       </ul>
       <!-- 收藏素材 -->
       <ul class="material-main" v-else>
-        <li v-for="item in this.reslist" :key="item.id">
+        <li v-for="item in reslist" :key="item.id">
           <img :src="item.url" alt />
         </li>
       </ul>
@@ -211,6 +211,5 @@ export default {
   .el-dialog {
       overflow: hidden;
   }
-
 }
 </style>
