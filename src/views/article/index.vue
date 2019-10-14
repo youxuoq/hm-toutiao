@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-expressions */
 <template>
   <!-- 内容管理 -->
   <div class="container-article">
